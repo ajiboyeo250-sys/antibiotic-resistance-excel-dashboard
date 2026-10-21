@@ -4,8 +4,8 @@ An interactive Excel dashboard that shows antibiotic resistance patterns across 
 
 > **Important:** the data is **synthetic**. It was generated for practice and does not describe real patients. The findings below describe this practice data only.
 
-![Dashboard overview, top](AMR_Dashboard/dashboard_overview_top.png)
-![Dashboard overview, bottom](AMR_Dashboard/dashboard_overview_bottom.png)
+![Dashboard Overview - Top](<AMR Dashboard/dashboard overview top.png>)
+![Dashboard Overview - Bottom](<AMR Dashboard/dashboard overview bottom.png>)
 
  What this project shows
 
