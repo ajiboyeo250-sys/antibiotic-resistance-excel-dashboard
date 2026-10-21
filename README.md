@@ -4,17 +4,17 @@ An interactive Excel dashboard that shows antibiotic resistance patterns across 
 
 > **Important:** the data is **synthetic**. It was generated for practice and does not describe real patients. The findings below describe this practice data only.
 
-![Dashboard overview, top](dashboard_overview_top.png)
-![Dashboard overview, bottom](dashboard_overview_bottom.png)
+![Dashboard overview, top](AMR_Dashboard/dashboard_overview_top.png)
+![Dashboard overview, bottom](AMR_Dashboard/dashboard_overview_bottom.png)
 
-What this project shows
+ What this project shows
 
 - Cleaning a messy dataset in Power Query and recording every fix
 - Reshaping data (unpivot) so one pivot can compare several antibiotics
 - Building pivot tables and charts, then linking them with slicers
 - Designing a dark-themed dashboard with KPI cards and a findings box
 
- The data
+The data
 
 | Item | Value |
 |---|---|
@@ -44,7 +44,7 @@ Added columns: **Age_Group** (Under 18, 18-34, 35-49, 50-64, 65+, Unknown) and *
 
 Reshaped table: **Antibiotic_Long** was created by unpivoting the five antibiotic columns into Antibiotic and Result (10,803 rows). Tests with no result are left out.
 
- Decisions
+Decisions
 
 - Blank ages and blank antibiotic results were **left blank**, not guessed. An invented value would make the rates wrong.
 - Blank gene entries were treated as "None". In real data, a blank could mean the test was not done, so this would be checked with the lab first.
@@ -59,8 +59,8 @@ What I built
 
 The slicers filter every card and chart. Example with Lagos selected:
 
-![Filtered by Lagos, top](dashboard_lagos_top.png)
-![Filtered by Lagos, bottom](dashboard_lagos_bottom.png)
+![Filtered by Lagos, top](AMR_Dashboard/dashboard_lagos_top.png)
+![Filtered by Lagos, bottom](AMR_Dashboard/dashboard_lagos_bottom.png)
 
  Key findings (synthetic data)
 
@@ -72,7 +72,7 @@ The slicers filter every card and chart. Example with Lagos selected:
 
 These patterns were built into the practice data, so they are not real clinical findings.
 
- Things I learned and limits
+Things I learned and limits
 
 - **Case matters in Power Query.** Pivot tables ignore upper and lower case, but Power Query does not. Labels like "resistant" and "Resistant" gave two different overall rates (30.1% and 30.6%) until I cleaned them.
 - Derived columns should be added **after** all the cleaning steps.
@@ -83,12 +83,13 @@ These patterns were built into the practice data, so they are not real clinical 
 
 Microsoft Excel: Power Query, PivotTables, PivotCharts, slicers, conditional formatting, data validation.
 
- Files
+Files
 
-- `Antibiotic_Resistance_Dashboard.xlsx`: the workbook with the data, queries, pivots and dashboard
+All files are in the `AMR_Dashboard` folder:
+
+- The Excel workbook with the data, queries, pivots and dashboard
 - `dashboard_overview_top.png`, `dashboard_overview_bottom.png`, `dashboard_lagos_top.png`, `dashboard_lagos_bottom.png`: screenshots
 
 Author
 
 Opeyemi Ajiboye. GitHub: ajiboyeo250-sys
-
